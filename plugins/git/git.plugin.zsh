@@ -98,7 +98,7 @@ gdv() { git diff -w "$@" | view - }
 compdef _git gdv=git-diff
 
 alias gf='git fetch'
-alias gfa='git fetch --all --prune'
+alias gfa='git fetch --all --prune --prune-tags'
 alias gfo='git fetch origin'
 
 function gfg() { git ls-files | grep $@ }
